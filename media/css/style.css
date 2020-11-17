@@ -1,0 +1,257 @@
+
+.displayInline{
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+    vertical-align: top;
+}
+
+/* Video Begins */
+
+.v-playButton{
+    width: 108px;
+    height: 89px;
+    background: url("../images/player-big-button.png");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -54px;
+    margin-top: -44.5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+.v-c-container{
+	height: 30px;
+	background: #252525;
+	position: absolute;
+	font-size: 12px;
+	z-index: 1000;
+	width: 100%;
+	bottom: 0px;
+}
+
+.v-container{
+	font-size: 0px;
+	position: relative;
+	overflow: hidden;
+	width: 640px;
+	height: 100%;
+	margin: auto !important;
+}
+
+.v-top-container{
+    position: absolute;
+    top: -47px;
+    height: 47px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.v-top-bg{
+    background: url(../images/video-top-bg.png);
+    position: absolute;
+    width: 100%;
+    height: 30px;
+}
+
+.v-top-img{
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 50px;
+    max-height: 40px;
+    margin: 7px 0px 0px 7px;
+    float: left;
+}
+
+.v-top-title{
+    color: #FFF;
+    font-size: 12px;
+    float: left;
+    margin: 8px 0px 0px 10px;
+}
+
+.v-top-button{
+    float: right;
+    font-size: 12px;
+    margin: 8px 10px 0px 0px;
+    color: #B4B4B4;
+    cursor: pointer;
+}
+
+.v-top-button:hover{
+    text-decoration: underline;
+}
+
+.v-wrapper{
+    position: relative;
+    height: 100%;
+}
+
+.v-wrapper video{
+	width: 100%;
+}
+
+.v-c-play{
+    width: 14px;
+    height: 24px;
+    background: url(../images/small-icons.png) -128px 6px no-repeat;
+    margin-left: 15px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.v-c-play.active{
+    background-position: -144px 6px;
+}
+
+.v-c-length{
+    color: #FFF;
+    margin: 10px 20px;
+}	
+
+.v-c-volume-controller {
+    width: 113px;
+    height: 26px;
+    margin: 2px 0px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.v-c-volume-slider {
+    width: 81px;
+    position: relative;
+    z-index: 11;
+    top: 8px;
+    height: 10px;
+}
+
+.v-c-volume-bg{
+    border-radius: 3px;
+    background: #4D4D4D;
+    position: absolute;
+    height: 10px;
+    width: 95px;
+    top: 8px;
+}
+
+.v-c-volume-slider .ui-slider-range, .v-c-progress .ui-slider-range{
+    position: absolute;
+    border: 0;
+    background-color: #777777;
+    height: 100%;
+    border-radius: 3px;
+    padding-right: 4px;
+}
+
+.v-c-progress .ui-slider-range{
+    border-radius: 0px;
+}
+
+.v-c-volume{
+    width: 19px;
+    height: 16px;
+    cursor: pointer;
+    background: url(../images/small-icons.png) -159px 0px;
+}
+
+.v-c-volume-container{
+    width: 19px;
+    margin: 6px 0px;
+}
+
+.v-c-fullScreen{
+    width: 21px;
+    height: 21px;
+    background: url(../images/small-icons.png) -197px 0px;
+    margin-right: 7px;
+    margin-top: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.v-c-hd{
+    width: 22px;
+    height: 14px;
+    background: url(../images/small-icons.png) -394px -21px;
+    float: right;
+    margin: 8px 7px 0px 0px;
+    cursor: pointer;
+}
+
+.v-c-toggleBoxes{
+    width: 26px;
+    height: 18px;
+    background: url(../images/small-icons.png) -291px -22px;
+    float: right;
+    margin: 8px 1px 0px 0px;
+    cursor: pointer;
+}
+
+.v-c-toggleBoxes:hover{background-position: -317px -22px;}
+.v-c-toggleBoxes.active{background-position: -342px -22px;}
+.v-c-toggleBoxes.active:hover{background-position: -367px -22px;}
+
+.v-c-hd:hover{background-position: -476px -21px}
+.v-c-hd.active{background-position: -421px -21px;}
+.v-c-hd.active:hover{background-position: -448px -21px;}
+
+.v-c-progress-bg{
+    height: 10px;
+    background: url(../images/video-player-progress-bg.png);
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.v-c-progress{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    z-index: 3;
+}
+
+.v-c-volume-slider a, .v-c-progress a{
+    position: absolute;
+    left: 0%;
+    width: 15px;
+    height: 16px;
+    display: block;
+    background: url(../images/small-icons.png) -180px 0px;
+    top: -3px;
+    z-index: 10;
+}
+
+.v-c-progress a{
+    background: none !important;
+}
+
+.v-c-buffer{
+    height: 10px;
+    background: url(../images/video-player-progress-buffer.png);
+    position: absolute;
+    width: 0px;
+    bottom: 0px;
+    z-index: 2;
+    left: 0px;
+}
+
+.v-fullScreen{
+    height: 100%;
+    width: 100%;
+}
+
+.v-fullScreen video{
+    height: 100%;
+    max-width: 100%;
+}
+
+.v-fullScreen .v-c-container{
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}

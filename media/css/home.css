@@ -1,0 +1,9 @@
+.secTitle{text-align: center;color: #eee;font-size: 23px;margin-top: 50px}
+.section{display:block;margin:5px auto;position: relative;width: 80%;}
+
+.videos{margin: auto;position: relative;width:100%;margin-top: 0px}
+.videos li{display: inline-block;margin: 10px}
+.videos li a, .videos li a:visited{color: grey;-moz-transition: .5s;-webkit-transition: .5s}
+.videos li a:hover{color: silver}
+.videos li .videoThumb{position:relative;width: 141px;height: 100px;background: white;border: 1px dashed grey;}
+.videos li .videoTitle{color: #fff;}

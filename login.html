@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="media/css/darkstyle.css" />
+</head>
+<body>
+<header>
+    <a href="http://gtube.muhprivacy.com/">gTube</a>
+    <a id="header-login" href="login.html">Log in</a>
+    <form id="search">
+        <input id="searchbar" type="text" name="Keyword" autofocus/>
+        <input id="searchb" type="submit" value="Search" />
+    </form>
+</header>
+<div id="wrapper">
+    <div id="pageTitle">Log in</div>
+    <a href="register.html">Register</a>
+    <form id="registerForm" name="registerForm" method="post" action="login.php" >
+
+        <label >User Name: </label>
+        <input class="input-styled" id="userName" name="userName" type="text" />
+        <br />
+
+        <label >Password: </label>
+        <input class="input-styled" id="pass" name="pass" type="text" />
+        <br />
+
+        <input id="submit" name="submit" type="submit" value="Log in" />
+    </form>
+    <div id="errorWrap">
+        <span id="errorMsg">
+
+        </span>
+    </div>
+</div>
+</body>
+</html>
